@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+   <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+   <div class="container">
+
+    <form id="search-form">
+      <input type="text" id="enter-city" placeholder="Enter a city..." minlength="3">
+    <input type="submit" id="search-box" value="Search">
+  </form>
+
+  <hr noshade color="#FD97A5" /> 
+
+<div class="current-weather">
+
+<div class="current-status">
+<span class="current-city"></span>
+<p>
+<span class="current-day-time"></span>
+<br />
+<span class="current-condition"></span>
+<br />
+<span class="humidity"></span> 
+<br />
+<span class="wind">
+</span>
+</p>
+</div>
+<div class="current-temp-box">
+<span class="current-icon"><img src="weather_cat.jpg" class="intro-image"></span> 
+<span class="current-temp"></span>
+</div>
+
+</div>
+
+</div>
+
+<img src="rainbow.jpg" class="weather-image">
+  <footer>Coded by
+  <footer>
+    Coded by
+    <a href="https://www.shecodes.io/graduates/169060-samantha-ward" target="_blank">
+      Samantha Ward 
+    </a>😺 GitHub @ 
+    <a href="https://github.com/jazziecookie" target="_blank">/jazziecookie</a>
+    😺 Hosted on Netlify @ 
+    <a href="https://jc-weather-app.netlify.app/" target="_blank">https://jc-weather-app.netlify.app/</a>
+  </footer>
+  </footer>
+  <script src="weatherapp.js"></script>
+  </body>
+  
+  </html>

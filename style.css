@@ -1,13 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
-
-footer {
-    position: fixed;
-    background: #FFB27A;
-    width: 100%;
-    bottom: 0;
-    margin: 0;
-    text-align: center;
-    padding: 10px;
-    border-top: 3px dotted #A0D094;
+/* /* ensure the window fills the available screen height */
+html,
+body {
+  height: 100%; 
 }
 
+/* center the children of body */
+body {
+  display: grid;
+  place-items: center;
+  font-family: Itim, Tahoma;
+  background-image:url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+a {
+  color: #000;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header time"
+    "search weather icon"
+    "footer footer footer";
+  grid-template-columns: 1fr 1.5fr 0.5fr;
+  gap: 0px;
+  background-color: #775339;
+  padding: 5px;
+  text-align: center;
+  border-radius: 40px;
+  box-shadow:
+  3px 3px #3C6869,
+  -0.2em 0 0.2em olive;
+  max-width: 800px;
+  margin: auto;
+}
+.container > div {
+  padding: 5px;
+}
+.container > div.header {
+  grid-area: header;
+  background-color: #6ACDB8;
+  border-top-left-radius: 40px;
+  border-bottom: 3px solid #986F5B;
+  border-top: 3px solid #986F5B;
+  border-left: 3px solid #986F5B;
+  font-size: 30px;
+}
+
+.container > div.time {
+  grid-area: time;
+  background-color: #6ACDB8;
+  border-top-right-radius: 40px;
+  border-bottom: 3px solid #986F5B;
+  border-top: 3px solid #986F5B;
+  border-right: 3px solid #986F5B;
+}
+
+.container > div.search {
+  grid-area: search;
+  align-self: right;
+  background-color: #FFF9ED;
+  border-left: 3px solid #986F5B;
+}
+.container > div.weather {
+  grid-area: weather;
+  background-color: #FFF9ED;
+}
+
+.container > div.icon {
+	grid-area: icon;
+  background-color: #FFF9ED;
+  border-right: 3px solid #986F5B;
+}
+.container > div.footer {
+  grid-area: footer;
+  background-color: #6ACDB8;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border: 3px solid #986F5B;
+  font-size: 20px;
+}
+
+#enter-city-form {
+  height: 40px;
+  width: 200px;
+  font-size: 25px;
+  font-family: Itim, Tahoma;
+  border: 3px solid #417372;
+}
+
+.search-button {
+  border-radius: 40px;
+  width: 60%;
+  height: 60px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-family: Itim, Tahoma;
+  border: 3px solid #417372;
+  background-color: #FDC771;
+}
+
+.image-left {
+  position: fixed;
+  width: 250px;
+  left: 0;
+  bottom: 0;
+}
+
+.image-right {
+  position: fixed;
+  width: 250px;
+  right: 0;
+  bottom: 0;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link href="style.css " rel="stylesheet" />
 </head>
 <body>
@@ -12,16 +13,16 @@
   <div class="header"><h1>Welcome to WeatherCat</h1></div>
   <div class="time">Time, day
   <p>😺</p></div>
-  <div class="search"><form>
+  <div class="search"><form class="search-form">
       <input type="search" id="enter-city-form" placeholder="Enter a city" minlength="2"/>
      <p></p>
       <input type="submit" class="search-button" value="Search" />
     </form></div>
-  <div class="weather">Current temperature
+  <div class="weather"><span class="current-temperature">Current temperature</span>
 <p>
-Weather description<br />
-Humidity Wind.</p></div>
-  <div class="icon">🐾 weather icon</div>
+<span class="weather-description">Weather description</span><br />
+<span class="humidity">Humidity</span> <span class="wind">Wind</span></p></div>
+  <div class="icon"><span class="weather-icon">🐾 weather icon</span></div>
   <div class="footer"><Coded by
     <a href="https://www.shecodes.io/graduates/169060-samantha-ward" target="_blank">
       Coded by Samantha Ward 
@@ -33,5 +34,7 @@ Humidity Wind.</p></div>
 
 <img src="sofacat.png" class="image-left">
 <img src="weatherTV.png" class="image-right">
+<script src="weatherapp.js"></script>
+</body>
 
 
